@@ -31,7 +31,7 @@ def parse_args():
         help="Output path",
     )
     parser.add_argument(
-        "--device",
+        "--cuda",
         type=str,
         required=True,
         help="Device to use, e.g. cpu, cuda, cuda:0, mps etc.",
