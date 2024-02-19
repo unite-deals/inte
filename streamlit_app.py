@@ -81,8 +81,8 @@ def x2img_app():
         with st.spinner("Loading model..."):
             x2img = X2Image(
                 model=model,
-                device=st.session_state.device,
-                output_path=st.session_state.output_path,
+                device=cuda,
+                output_path="outout",
                 custom_pipeline=cpipe,
                 token_identifier=token_identifier,
                 embeddings_url=embeddings,
@@ -102,5 +102,4 @@ if __name__ == "__main__":
     args = parse_args()
     logger.info(f"Args: {args}")
     logger.info(st.session_state)
-    st.session_state.output_path = args.output
     run_app()
