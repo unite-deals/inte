@@ -1,3 +1,4 @@
+altair==4.0
 accelerate==0.15.0
 basicsr>=1.4.2
 diffusers>=0.14.0
