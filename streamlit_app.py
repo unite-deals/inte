@@ -102,6 +102,5 @@ if __name__ == "__main__":
     args = parse_args()
     logger.info(f"Args: {args}")
     logger.info(st.session_state)
-    st.session_state.device = args.device
     st.session_state.output_path = args.output
     run_app()
